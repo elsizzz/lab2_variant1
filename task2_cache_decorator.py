@@ -89,24 +89,22 @@ def demonstrate_cache(thing: str, expire: int, times: int):
 
 def main():
     """Демонстрация работы декоратора кэширования."""
-    print("=" * 60)
     print("ЗАДАЧА 2: Декоратор кэширования (postgreSQL)")
-    print("=" * 60)
     
     # Пример 1: bike_store с expire=5
     demonstrate_cache('bike_store', 5, 8)  # Вызовем 8 раз, чтобы увидеть обновление
     
-    print("\n" + "-" * 40)
+    print("\n")
     
     # Пример 2: users с expire=5
     demonstrate_cache('users', 5, 8)
     
-    print("\n" + "-" * 40)
+    print("\n")
     
     # Пример 3: products с разным expire
     demonstrate_cache('products', 3, 5)
     
-    print("\n" + "=" * 60)
+    print("\n")
 
 
 if __name__ == "__main__":
